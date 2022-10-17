@@ -1,0 +1,14 @@
+# https://setuptools.pypa.io/en/latest/userguide/quickstart.html
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ducks_docker_compose"
+version = "1.0.0"
+dependencies = [
+]
+
+[project.scripts]
+ddc = "ducks_docker_compose.ddc:main"

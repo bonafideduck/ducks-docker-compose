@@ -1,0 +1,4 @@
+.*.swp
+dist/
+__pycache__/
+ducks_docker_compose.egg-info
