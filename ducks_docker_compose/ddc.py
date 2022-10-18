@@ -7,23 +7,6 @@ from pathlib import Path
 
 __version__ = "1.0.0"
 
-class Gobble(argparse.Action):
-    """
-    Gobble grabs the rest of the line and adds it as an array.
-    """
-
-    def __call__(self, parser, namespace, values, option_string=None):
-        breakpoint()
-        dict_object = getattr(namespace, self.dest, None) or {}
-        for token in values:
-            if "=" in token:
-                k, v = token.split("=", 1)
-            else:
-                k, v = token, True
-            dict_object[k.strip()] = v
-        setattr(namespace, self.dest, dict_object)
-
-
 def parse_top_arguments():
     parser = argparse.ArgumentParser()
 
@@ -290,7 +273,6 @@ def main():
     arguments = sys.argv.copy()
 
     top = parse_top_arguments()
-
 
     if top.command == "up":
         up = parse_up_arguments(top.arguments)
