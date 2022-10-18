@@ -1,8 +1,8 @@
 # Duck's Docker-Compose
 
-## Summary of enhancements
+An enhanced docker-compose.
 
-An enhanced Docker-Compse that:
+## Summary of enhancements
 
 * Finds the docker-compose-file.yaml in the parent directories
 * Defaults to Daemon on up
