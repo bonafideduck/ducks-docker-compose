@@ -37,6 +37,15 @@ is supplied, it will use the `DOCKER_COMPOSE_SHELL_SERVICE` environment varaible
 pip3 install git+https://github.com/bonafideduck/ducks-docker-compose.git@main
 ```
 
+## Build and Distribution
+
+```
+flit build
+```
+```
+flit publish
+```
+
 ## Where did this name come from?
 
 The original name was going to be `dc`, but that conflicts with the existing unix

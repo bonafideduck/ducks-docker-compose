@@ -4,8 +4,7 @@ import sys
 import os
 import argparse
 from pathlib import Path
-
-__version__ = "1.0.0"
+from . import __version__
 
 def parse_top_arguments():
     parser = argparse.ArgumentParser()

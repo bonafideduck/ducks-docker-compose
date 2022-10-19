@@ -1,14 +1,13 @@
 # https://setuptools.pypa.io/en/latest/userguide/quickstart.html
 
 [build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
 
 [project]
 name = "ducks_docker_compose"
-version = "1.0.0"
-dependencies = [
-]
+description = "An enhanced Docker-Compose"
+dynamic = ["version"]
 
 [project.scripts]
 ddc = "ducks_docker_compose.ddc:main"
