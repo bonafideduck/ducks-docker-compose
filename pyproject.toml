@@ -6,8 +6,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "ducks_docker_compose"
-description = "An enhanced Docker-Compose"
-dynamic = ["version"]
+dynamic = ["version", "description"]
 
 [project.scripts]
 ddc = "ducks_docker_compose.ddc:main"
